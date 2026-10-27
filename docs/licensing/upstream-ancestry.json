@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/storytold/cadcraft",
+  "commit": "41d9b5e957b0719c04b9687c4f29088d77153c31",
+  "upstream_parents": [
+    "b9f96d3dd3630a8de2cb7885d66ded334682918b"
+  ],
+  "commit_url": "https://github.com/storytold/cadcraft/commit/41d9b5e957b0719c04b9687c4f29088d77153c31",
+  "local_checkout": "shallow; origin remains original upstream; no push performed"
+}

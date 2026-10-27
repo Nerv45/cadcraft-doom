@@ -1,0 +1,16 @@
+{
+  "added_unchanged_notices": [
+    {
+      "file": "licenses/dependencies/epaint_default_fonts-0.36.2/fonts/Hack-Regular.txt",
+      "source": "epaint_default_fonts 0.36.2 packaged font notice, unchanged",
+      "sha256": "47c0cccbeec7e8614548cc485588b28149e7874188df5f41b36efebcee285c87"
+    },
+    {
+      "file": "licenses/dependencies/epaint_default_fonts-0.36.2/fonts/emoji-icon-font-mit-license.txt",
+      "source": "epaint_default_fonts 0.36.2 packaged font notice, unchanged",
+      "sha256": "b9d2c1d909aa149996fd4c91dcb92b2362a04431640c1d200959da94caf8cde1"
+    }
+  ],
+  "old_release_archives": "not modified; binary archive lacks these two standalone notices; repackage before publication",
+  "font_binaries_modified": false
+}

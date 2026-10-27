@@ -1,0 +1,14 @@
+{
+  "public_release_allowed": true,
+  "publication_approved": false,
+  "intended_combined_license": "GPL-3.0-or-later",
+  "blockers": [],
+  "review": "docs/licensing/ADAPTER_REPLACEMENT.md",
+  "scope": "169 explicitly licensed engine files plus newly authored host; former ambiguous upstream files excluded",
+  "branding_note": "Debranded current tree; no restricted historical artwork in release/source ZIP; preserve factual credits and upstream terms",
+  "requirements": [
+    "Publish matching complete corresponding source alongside binary",
+    "Preserve all GPL, MPL, MIT, Apache and font notices",
+    "Obtain project owner approval before any public push or release"
+  ]
+}

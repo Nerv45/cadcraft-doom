@@ -337,15 +337,15 @@ fn about(ctx: &egui::Context, open: &mut bool) {
                 1 => crate::credits::contributors_ui(ui),
                 2 => crate::credits::models_ui(ui),
                 _ => {
-                    ui.heading(crate::tl!("CADCraft"));
+                    ui.heading("CADCraft DOOM — unofficial community modification");
                     ui.label(crate::tf!("Version {version}", version = env!("CARGO_PKG_VERSION")));
-                    ui.label(crate::tl!("Computer-aided design and drafting: an open-source, clean-room CAD application written in pure Rust."));
+                    ui.label("CAD drafting with DoomGeneric embedded in the drawing canvas.");
                     ui.add_space(6.0);
-                    ui.label(RichText::new(crate::tl!("One of the Crafting Apps by the ArtCraft team and community.")).color(t.text_dim));
-                    ui.hyperlink_to("getartcraft.com/apps/cadcraft", "https://getartcraft.com/apps/cadcraft");
-                    ui.hyperlink_to(crate::tl!("Join us on Discord"), "https://discord.gg/artcraft");
+                    ui.label(RichText::new("Based on CADCraft by the ArtCraft Team and CADCraft contributors.").color(t.text_dim));
+                    ui.hyperlink_to("Original CADCraft source", "https://github.com/storytold/cadcraft");
+                    ui.label("Not affiliated with or endorsed by the upstream developers or id Software.");
                     ui.add_space(6.0);
-                    ui.label(RichText::new(crate::tl!("MIT OR Apache-2.0. Not affiliated with Autodesk, Inc.")).small().color(t.text_faint));
+                    ui.label(RichText::new("Original CADCraft: MIT OR Apache-2.0. DoomGeneric: GPL; see LICENSE and THIRD_PARTY_LICENSES.md. Not affiliated with Autodesk, Inc.").small().color(t.text_faint));
                 }
             }
         });

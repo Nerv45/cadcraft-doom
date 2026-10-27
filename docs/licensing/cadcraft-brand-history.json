@@ -1,0 +1,54 @@
+{
+  "first_commit": {
+    "first_brand_commit": "d9ab00c53c1250bb2e681bf7b26044c78888af3b",
+    "parents": [
+      "ebfebbdbf4236192f9d5df219e59698407f6dacd"
+    ],
+    "date": "2026-10-06T03:22:25Z",
+    "url": "https://github.com/storytold/cadcraft/commit/d9ab00c53c1250bb2e681bf7b26044c78888af3b",
+    "brand_terms_sha256": "382b7443d4346ba31115a9d7a1f3fcfc16e44c39c94654b01998e09cef8a2679",
+    "matches_current_terms": false,
+    "matches_current_terms_normalized_line_endings": true,
+    "brand_files_added_together": 8,
+    "brand_commit_is_repository_root": false,
+    "note": "Raw-byte mismatch is CRLF/LF checkout conversion; normalized licence text is identical. API commit lists all eight artwork files and license as added."
+  },
+  "path_history": [
+    {
+      "path": "docs/brand/LICENSE-brand.txt",
+      "url": "https://api.github.com/repos/storytold/cadcraft/commits?path=docs%2Fbrand%2FLICENSE-brand.txt&sha=41d9b5e957b0719c04b9687c4f29088d77153c31&per_page=100",
+      "commits": [
+        {
+          "sha": "d9ab00c53c1250bb2e681bf7b26044c78888af3b",
+          "date": "2026-10-06T03:22:25Z",
+          "message": "M0: CADCraft skeleton and vertical slice\n\nWorkspace (geom, dxf, color, doc, fonts, render, io, engine, ui-egui, mcp; apps cadcraft,\ncadcraft-cli, cadcraft-web; xtask), AutoCAD-for-Mac style UI with code-drawn icons, command line\nwith prompts/keywords/AutoComplete, draw and modify commands, object snaps, polar/ortho,\nselection, undo, layers and properties palettes, DXF read/write, SVG/PNG export, MCP server,\nJSON control channel, CLI, wasm build, README, ROADMAP, AGENTS.md.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+          "url": "https://github.com/storytold/cadcraft/commit/d9ab00c53c1250bb2e681bf7b26044c78888af3b"
+        }
+      ]
+    },
+    {
+      "path": "docs/brand/artcraft-mark.svg",
+      "url": "https://api.github.com/repos/storytold/cadcraft/commits?path=docs%2Fbrand%2Fartcraft-mark.svg&sha=41d9b5e957b0719c04b9687c4f29088d77153c31&per_page=100",
+      "commits": [
+        {
+          "sha": "d9ab00c53c1250bb2e681bf7b26044c78888af3b",
+          "date": "2026-10-06T03:22:25Z",
+          "message": "M0: CADCraft skeleton and vertical slice\n\nWorkspace (geom, dxf, color, doc, fonts, render, io, engine, ui-egui, mcp; apps cadcraft,\ncadcraft-cli, cadcraft-web; xtask), AutoCAD-for-Mac style UI with code-drawn icons, command line\nwith prompts/keywords/AutoComplete, draw and modify commands, object snaps, polar/ortho,\nselection, undo, layers and properties palettes, DXF read/write, SVG/PNG export, MCP server,\nJSON control channel, CLI, wasm build, README, ROADMAP, AGENTS.md.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+          "url": "https://github.com/storytold/cadcraft/commit/d9ab00c53c1250bb2e681bf7b26044c78888af3b"
+        }
+      ]
+    },
+    {
+      "path": "docs/brand/artcraft-logo.svg",
+      "url": "https://api.github.com/repos/storytold/cadcraft/commits?path=docs%2Fbrand%2Fartcraft-logo.svg&sha=41d9b5e957b0719c04b9687c4f29088d77153c31&per_page=100",
+      "commits": [
+        {
+          "sha": "d9ab00c53c1250bb2e681bf7b26044c78888af3b",
+          "date": "2026-10-06T03:22:25Z",
+          "message": "M0: CADCraft skeleton and vertical slice\n\nWorkspace (geom, dxf, color, doc, fonts, render, io, engine, ui-egui, mcp; apps cadcraft,\ncadcraft-cli, cadcraft-web; xtask), AutoCAD-for-Mac style UI with code-drawn icons, command line\nwith prompts/keywords/AutoComplete, draw and modify commands, object snaps, polar/ortho,\nselection, undo, layers and properties palettes, DXF read/write, SVG/PNG export, MCP server,\nJSON control channel, CLI, wasm build, README, ROADMAP, AGENTS.md.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+          "url": "https://github.com/storytold/cadcraft/commit/d9ab00c53c1250bb2e681bf7b26044c78888af3b"
+        }
+      ]
+    }
+  ]
+}

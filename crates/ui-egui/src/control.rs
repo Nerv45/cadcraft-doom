@@ -260,6 +260,7 @@ pub fn inspect(app: &CadApp, ctx: &egui::Context) -> Value {
         "theme": if app.shown_theme() == egui::Theme::Light { "light" } else { "dark" },
         "animations": app.shows_animations(),
         "focus": focus_json(ctx),
+        "doomActive": app.doom_active(),
         "canvasRect": app.canvas.rect.map(|c| json!([c.left(), c.top(), c.width(), c.height()])),
         "window": [r.width(), r.height()],
         "view": view.map(|v| json!({"center": [v.center.x, v.center.y], "height": v.height})),

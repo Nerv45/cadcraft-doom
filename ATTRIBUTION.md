@@ -9,9 +9,8 @@ artwork, fonts, hatch patterns, linetypes, templates or presets.** Every asset i
 CADCraft contributors or third-party material under an open licence (OSI open source, public domain
 / CC0, or Creative Commons that allows redistribution). Screenshots of Autodesk software are never
 committed. Font files are not added here: shared fonts live in
-[storytold/craft-fonts](https://github.com/storytold/craft-fonts), an optional build input. The one
-exception is the ArtCraft brand in `docs/brand/`: ArtCraft trademarks, not open source, used under
-`docs/brand/LICENSE-brand.txt`.
+[storytold/craft-fonts](https://github.com/storytold/craft-fonts), an optional build input. Restricted ArtCraft artwork has been removed from this community modification.
+The original brand terms remain in `docs/brand/LICENSE-brand.txt` for reference.
 
 Generated-in-code assets are original and have no file to list:
 - the UI icon set (`crates/ui-egui/src/icons.rs`);
@@ -43,14 +42,6 @@ Generated-in-code assets are original and have no file to list:
 | `docs/images/ui-apartment.png` | CADCraft contributors | screenshot of CADCraft itself (examples/apartment.dxf) | MIT OR Apache-2.0 | Original; no Autodesk UI |
 | `docs/images/ui-layout.png` | CADCraft contributors | screenshot of CADCraft itself (a layout of examples/apartment.dxf) | MIT OR Apache-2.0 | Original; no Autodesk UI |
 | `docs/images/ui-bracket.png` | CADCraft contributors | screenshot of CADCraft itself (sample drawing generated in code) | MIT OR Apache-2.0 | Original; no Autodesk UI |
-| `docs/brand/artcraft-logo-white.png` | ArtCraft Team | storytold/craftrules `assets/brand/` | ArtCraft brand terms (`docs/brand/LICENSE-brand.txt`) | Trademark, not open source |
-| `docs/brand/artcraft-logo-white.svg` | ArtCraft Team | storytold/craftrules `assets/brand/` | ArtCraft brand terms (`docs/brand/LICENSE-brand.txt`) | Trademark, not open source |
-| `docs/brand/artcraft-logo.png` | ArtCraft Team | storytold/craftrules `assets/brand/` | ArtCraft brand terms (`docs/brand/LICENSE-brand.txt`) | Trademark, not open source |
-| `docs/brand/artcraft-logo.svg` | ArtCraft Team | storytold/craftrules `assets/brand/` | ArtCraft brand terms (`docs/brand/LICENSE-brand.txt`) | Trademark, not open source |
-| `docs/brand/artcraft-mark-black.png` | ArtCraft Team | storytold/craftrules `assets/brand/` | ArtCraft brand terms (`docs/brand/LICENSE-brand.txt`) | Trademark, not open source |
-| `docs/brand/artcraft-mark-black.svg` | ArtCraft Team | storytold/craftrules `assets/brand/` | ArtCraft brand terms (`docs/brand/LICENSE-brand.txt`) | Trademark, not open source |
-| `docs/brand/artcraft-mark.png` | ArtCraft Team | storytold/craftrules `assets/brand/` | ArtCraft brand terms (`docs/brand/LICENSE-brand.txt`) | Trademark, not open source |
-| `docs/brand/artcraft-mark.svg` | ArtCraft Team | storytold/craftrules `assets/brand/` | ArtCraft brand terms (`docs/brand/LICENSE-brand.txt`) | Trademark, not open source |
 
 ## Interface translations
 
@@ -71,3 +62,12 @@ Generated-in-code assets are original and have no file to list:
 | `crates/ui-egui/src/i18n/hu.tsv` | @Skaywalker | Original Hungarian translations of CADCraft English strings | MIT OR Apache-2.0 (`LICENSE-MIT`, `LICENSE-APACHE`) | No proprietary localization resources copied |
 | `crates/ui-egui/src/i18n/tr.tsv` | @ogzhnklvz (AI-assisted) | Original Turkish translations of CADCraft English strings | MIT OR Apache-2.0 (`LICENSE-MIT`, `LICENSE-APACHE`) | No proprietary localization resources copied; written from the English strings, no other catalog used as a source; the running app reviewed by a native speaker |
 | `crates/ui-egui/src/i18n/el.tsv` | @Camthalion77 with ChatGPT (AI-assisted) | Original Greek translations of CADCraft English strings | MIT OR Apache-2.0 (`LICENSE-MIT`, `LICENSE-APACHE`) | No proprietary localization resources copied; independent native proofreading pending |
+
+## CADCraft DOOM fork
+
+| Component | Author | Source | License |
+|---|---|---|---|
+| Vendored DoomGeneric C source (crates/doom/vendor) | id Software, Simon Howard and DoomGeneric contributors; original file notices retained | https://github.com/ozkl/doomgeneric/tree/e257a09527062bfb986b6e5e0780839b6cbd5b71 | GPL; see vendor/LICENSE-DoomGeneric and source headers |
+| CADCraft DOOM native bridge and Rust facade | CADCraft DOOM contributors | crates/doom/native and crates/doom/src | GPL-2.0-or-later |
+
+No game WAD data belongs in this source repository or public release. Private test WADs outside this checkout are excluded. See LICENSE and THIRD_PARTY_LICENSES.md for the unresolved combined-executable licensing gate.

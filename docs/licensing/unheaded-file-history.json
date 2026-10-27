@@ -1,0 +1,355 @@
+[
+  {
+    "file": "config.h",
+    "history": [
+      "470823b6408a4c613036736d7fe44bcddf71d837 ozkl: the folder for save/load and default config set to '.'",
+      "486ac2b7fd9867a6c93b650dc30ad28bf47f0f30 ozkl: Windows GDI port",
+      "136cc5954b63dffbcbe60e5cea9231074a7debe8 ozkl: renamed to doomgeneric",
+      "72b0675c10f51ba5844df5669991c3ab7038fd1f Maxime Vincent: fbdoom first version with more generic framebuffer support",
+      "019b22b7bdf67c012bceffb0315de696d2819c9e Maxime Vincent: Upgraded to chocolate-doom port instead"
+    ]
+  },
+  {
+    "file": "doom.h",
+    "history": [
+      "136cc5954b63dffbcbe60e5cea9231074a7debe8 ozkl: renamed to doomgeneric",
+      "72b0675c10f51ba5844df5669991c3ab7038fd1f Maxime Vincent: fbdoom first version with more generic framebuffer support",
+      "019b22b7bdf67c012bceffb0315de696d2819c9e Maxime Vincent: Upgraded to chocolate-doom port instead"
+    ]
+  },
+  {
+    "file": "doomgeneric.c",
+    "history": [
+      "ca6b513b541ecb53aa65d36e4959c21ecea48dd3 Turo Lamminen: Fixes to 256-color mode",
+      "eed7c27708d10e86427fe4902aaabcd74c8b2b46 ozkl: main() from outside",
+      "486ac2b7fd9867a6c93b650dc30ad28bf47f0f30 ozkl: Windows GDI port"
+    ]
+  },
+  {
+    "file": "doomgeneric.h",
+    "history": [
+      "70ce20825063bc4b36bda95d3e36091fa32b8060 Fabian Ruhland: doomgeneric.h: Make interface compatible with C++",
+      "ca6b513b541ecb53aa65d36e4959c21ecea48dd3 Turo Lamminen: Fixes to 256-color mode",
+      "dc8e70d85af11885a76e8999b0fc5faa179bf461 Turo Lamminen: Make it easier to override resolution from Makefile",
+      "eed7c27708d10e86427fe4902aaabcd74c8b2b46 ozkl: main() from outside",
+      "63fe4c3a85e7f6bd07d7d1f3570c65647c25f36b Ørjan: portability fixes",
+      "342f0a2e56a66c09c47822928b9b585e61301404 ozkl: ported to xlib with very basic pixel access",
+      "486ac2b7fd9867a6c93b650dc30ad28bf47f0f30 ozkl: Windows GDI port"
+    ]
+  },
+  {
+    "file": "doomgeneric.vcxproj",
+    "history": [
+      "17e4f61daaf05ab77d8da448c6e0520e25476681 Trider12: Fixed VS project and .gitignore",
+      "486ac2b7fd9867a6c93b650dc30ad28bf47f0f30 ozkl: Windows GDI port"
+    ]
+  },
+  {
+    "file": "doomgeneric.vcxproj.filters",
+    "history": [
+      "17e4f61daaf05ab77d8da448c6e0520e25476681 Trider12: Fixed VS project and .gitignore",
+      "486ac2b7fd9867a6c93b650dc30ad28bf47f0f30 ozkl: Windows GDI port"
+    ]
+  },
+  {
+    "file": "doomgeneric_allegro.c",
+    "history": [
+      "d0946b46cf617467f014a25e264fd952698a13f9 Turo Lamminen: Add Allegro code"
+    ]
+  },
+  {
+    "file": "doomgeneric_emscripten.c",
+    "history": [
+      "980aea8c363b73162e6b04014d3b1bc22ec7851a ozkl: emscripten port",
+      "ec96a8a5e94ae774d1c839fe5f047ff0fb22a0d0 ozkl: main outside",
+      "b47e17b34cb069381b8c7a0a13330e6f32558c2c lukneu: Added missing keys to doomgeneric_sdl.c",
+      "63551ae64c9893fcc0b463536c43be49bdfbb5b4 Akhsarbek Gozoev: Renamed all occurrences of 'osx' to 'sdl', deleted binary files (doomgeneric, doomgeneric/DOOM1.WAD)",
+      "aadf841f312eddc73326977bb4838f08260db5a6 Akhsarbek Gozoev: osx sdl2 port done"
+    ]
+  },
+  {
+    "file": "doomgeneric_linuxvt.c",
+    "history": [
+      "63e2d26a8c6b67fa922aff7782e315e548bf28e3 ozkl: Add safeguards for linuxvt",
+      "9ce0ba1dc6eeb18e7087fda6382ff2c85fc64e82 Zoe: Patch doomgeneric_linuxvt.c to set tty graphics mode",
+      "c1b8396c324f3a1ec507407069002f049b4dd328 techflashYT: linuxvt: various framebuffer improvements",
+      "5753998234113c0ff9b17fd69f0f49cda7a7d493 techflashYT: New platform: Linux VT"
+    ]
+  },
+  {
+    "file": "doomgeneric_sdl.c",
+    "history": [
+      "ec96a8a5e94ae774d1c839fe5f047ff0fb22a0d0 ozkl: main outside",
+      "b47e17b34cb069381b8c7a0a13330e6f32558c2c lukneu: Added missing keys to doomgeneric_sdl.c",
+      "63551ae64c9893fcc0b463536c43be49bdfbb5b4 Akhsarbek Gozoev: Renamed all occurrences of 'osx' to 'sdl', deleted binary files (doomgeneric, doomgeneric/DOOM1.WAD)",
+      "aadf841f312eddc73326977bb4838f08260db5a6 Akhsarbek Gozoev: osx sdl2 port done"
+    ]
+  },
+  {
+    "file": "doomgeneric_soso.c",
+    "history": [
+      "935156667fe3eafcb602e04efd24dab957eaba39 ozkl: soso updates",
+      "ec96a8a5e94ae774d1c839fe5f047ff0fb22a0d0 ozkl: main outside",
+      "2019640bd62d727d56dcb811850cc55a7a3a3e27 ozkl: doom soso port update",
+      "0f488ee086caa372135c329b41b2e942ab51503b ozkl: clang istead of gcc",
+      "b964f78952befaa56bb3beb121471e5d22ef1f3c ozkl: better framebuffer handling for soso",
+      "e1ddbf30a099d80591506038972a7f739d910650 ozkl: posx/posy args added to soso to support window placement",
+      "055456a0230a1d6aef819ef9cd8325a49d8ea2a8 ozkl: added 'y' key to known keys for soso",
+      "c85549977f7cfc7f1caee2520983d7d8778a9b56 ozkl: added empty implementation of SetWindowTitle to soso",
+      "98e1f410a32c6a35a9ef456b799d64c257180554 ozkl: ported to soso os"
+    ]
+  },
+  {
+    "file": "doomgeneric_sosox.c",
+    "history": [
+      "1456d5ca13a7c132f96805e7e8b06247a67ea3ab ozkl: sosox: get keys from nanox",
+      "ec96a8a5e94ae774d1c839fe5f047ff0fb22a0d0 ozkl: main outside",
+      "2d9b24f07c78c36becf41d89db30fa99863463e5 ozkl: soso nano-x port"
+    ]
+  },
+  {
+    "file": "doomgeneric_win.c",
+    "history": [
+      "ec96a8a5e94ae774d1c839fe5f047ff0fb22a0d0 ozkl: main outside",
+      "486ac2b7fd9867a6c93b650dc30ad28bf47f0f30 ozkl: Windows GDI port"
+    ]
+  },
+  {
+    "file": "doomgeneric_xlib.c",
+    "history": [
+      "e02ae9633191bad20d5302d04423b68381883f1e isif00: [FIX] loop with an unused value to i changed to a while loop",
+      "dfc21a27fa03fec5527b8697cc1df2d9a6d14916 isif00: [FIX] deprecated implementations of some functions",
+      "f316a8bb5437d57cdecc1f52b62af107dc82f7e3 ozkl: X11/XKBlib.h",
+      "ec96a8a5e94ae774d1c839fe5f047ff0fb22a0d0 ozkl: main outside",
+      "580e19a7b8e105e0a3f56f4248b8e15f1b264e1e Daniel Bomar: X11: Improve performance by using XImage over XPixmap",
+      "63fe4c3a85e7f6bd07d7d1f3570c65647c25f36b Ørjan: portability fixes",
+      "afc47e5268ecbc983451d925d84a1b8e35e44053 ozkl: added XkbSetDetectableAutoRepeat to xlib port for getting key press events right way",
+      "342f0a2e56a66c09c47822928b9b585e61301404 ozkl: ported to xlib with very basic pixel access"
+    ]
+  },
+  {
+    "file": "dummy.c",
+    "history": [
+      "62b78cdd3331b30843fee334b70f92d52e07f509 ozkl: empty I_InitTimidityConfig() decleration for non timidity ports!",
+      "35387d77b85a4094d81ef9b2c44c332a55ab48b3 Georgi Gerganov: Added SDL2-based sound playback",
+      "136cc5954b63dffbcbe60e5cea9231074a7debe8 ozkl: renamed to doomgeneric",
+      "72b0675c10f51ba5844df5669991c3ab7038fd1f Maxime Vincent: fbdoom first version with more generic framebuffer support",
+      "019b22b7bdf67c012bceffb0315de696d2819c9e Maxime Vincent: Upgraded to chocolate-doom port instead"
+    ]
+  },
+  {
+    "file": "icon.c",
+    "history": [
+      "136cc5954b63dffbcbe60e5cea9231074a7debe8 ozkl: renamed to doomgeneric",
+      "72b0675c10f51ba5844df5669991c3ab7038fd1f Maxime Vincent: fbdoom first version with more generic framebuffer support",
+      "019b22b7bdf67c012bceffb0315de696d2819c9e Maxime Vincent: Upgraded to chocolate-doom port instead"
+    ]
+  },
+  {
+    "file": "Makefile",
+    "history": [
+      "0f488ee086caa372135c329b41b2e942ab51503b ozkl: clang istead of gcc",
+      "d56ba1f41e57f83936ada349e849fbcd84eb704d Ørjan: Makefile: build with _DEFAULT_SOURCE",
+      "342f0a2e56a66c09c47822928b9b585e61301404 ozkl: ported to xlib with very basic pixel access",
+      "486ac2b7fd9867a6c93b650dc30ad28bf47f0f30 ozkl: Windows GDI port",
+      "136cc5954b63dffbcbe60e5cea9231074a7debe8 ozkl: renamed to doomgeneric",
+      "015fec85cf502fd0d67eed4498d4d79e323dd987 Maxime Vincent: tty keyboard input work in progress",
+      "72b0675c10f51ba5844df5669991c3ab7038fd1f Maxime Vincent: fbdoom first version with more generic framebuffer support",
+      "019b22b7bdf67c012bceffb0315de696d2819c9e Maxime Vincent: Upgraded to chocolate-doom port instead",
+      "968f7e0090fd9dc08c6a0fdbe5f51b8846ab81d7 Maxime Vincent: Even less warnings, working on Frosted again. Walls still b0rked",
+      "491cc4b0e12b058e57daff1149c07ee0ac90a8e8 Maxime Vincent: Removed a lot of warnings - but broke Frosted version",
+      "d9d80e4e18e1ce4d9417efe68c52758d932c41ef Maxime Vincent: Reduce stack usage",
+      "6ab1ad1ed2aa21811ee63dc752b6c9249c3daf95 Maxime Vincent: Add more debugging to build",
+      "dbb534f408919c58a4e3437dc046a6dfec5f716f Maxime Vincent: Compiles with stubs, dummy video and sound",
+      "c9855f26013830c00840d8b24d57e32321f6f4c9 Maxime Vincent: Rename to frosted-doom",
+      "4eb368a960647c8cc82d721d0183629ae10759d1 Travis Bradshaw: The DOOM sources as originally released on December 23, 1997"
+    ]
+  },
+  {
+    "file": "Makefile.djgpp",
+    "history": [
+      "a1b8c56c2a2727f4c403e4562363de1359dd60c3 Turo Lamminen: Add DJGPP makefile",
+      "c2dad8e1347aa39eaa1a65fd34368aa7605ad36d ozkl: sdl makefile",
+      "1aebbdf1dcfa33b65b1eb6eb407183ec726f5735 ozkl: better sdl makefile",
+      "35387d77b85a4094d81ef9b2c44c332a55ab48b3 Georgi Gerganov: Added SDL2-based sound playback",
+      "0f488ee086caa372135c329b41b2e942ab51503b ozkl: clang istead of gcc",
+      "63551ae64c9893fcc0b463536c43be49bdfbb5b4 Akhsarbek Gozoev: Renamed all occurrences of 'osx' to 'sdl', deleted binary files (doomgeneric, doomgeneric/DOOM1.WAD)",
+      "aadf841f312eddc73326977bb4838f08260db5a6 Akhsarbek Gozoev: osx sdl2 port done",
+      "342f0a2e56a66c09c47822928b9b585e61301404 ozkl: ported to xlib with very basic pixel access",
+      "486ac2b7fd9867a6c93b650dc30ad28bf47f0f30 ozkl: Windows GDI port",
+      "136cc5954b63dffbcbe60e5cea9231074a7debe8 ozkl: renamed to doomgeneric",
+      "015fec85cf502fd0d67eed4498d4d79e323dd987 Maxime Vincent: tty keyboard input work in progress",
+      "72b0675c10f51ba5844df5669991c3ab7038fd1f Maxime Vincent: fbdoom first version with more generic framebuffer support",
+      "019b22b7bdf67c012bceffb0315de696d2819c9e Maxime Vincent: Upgraded to chocolate-doom port instead",
+      "968f7e0090fd9dc08c6a0fdbe5f51b8846ab81d7 Maxime Vincent: Even less warnings, working on Frosted again. Walls still b0rked",
+      "491cc4b0e12b058e57daff1149c07ee0ac90a8e8 Maxime Vincent: Removed a lot of warnings - but broke Frosted version",
+      "d9d80e4e18e1ce4d9417efe68c52758d932c41ef Maxime Vincent: Reduce stack usage",
+      "6ab1ad1ed2aa21811ee63dc752b6c9249c3daf95 Maxime Vincent: Add more debugging to build",
+      "dbb534f408919c58a4e3437dc046a6dfec5f716f Maxime Vincent: Compiles with stubs, dummy video and sound",
+      "c9855f26013830c00840d8b24d57e32321f6f4c9 Maxime Vincent: Rename to frosted-doom",
+      "4eb368a960647c8cc82d721d0183629ae10759d1 Travis Bradshaw: The DOOM sources as originally released on December 23, 1997"
+    ]
+  },
+  {
+    "file": "Makefile.emscripten",
+    "history": [
+      "980aea8c363b73162e6b04014d3b1bc22ec7851a ozkl: emscripten port",
+      "c2dad8e1347aa39eaa1a65fd34368aa7605ad36d ozkl: sdl makefile",
+      "1aebbdf1dcfa33b65b1eb6eb407183ec726f5735 ozkl: better sdl makefile",
+      "35387d77b85a4094d81ef9b2c44c332a55ab48b3 Georgi Gerganov: Added SDL2-based sound playback",
+      "0f488ee086caa372135c329b41b2e942ab51503b ozkl: clang istead of gcc",
+      "63551ae64c9893fcc0b463536c43be49bdfbb5b4 Akhsarbek Gozoev: Renamed all occurrences of 'osx' to 'sdl', deleted binary files (doomgeneric, doomgeneric/DOOM1.WAD)",
+      "aadf841f312eddc73326977bb4838f08260db5a6 Akhsarbek Gozoev: osx sdl2 port done",
+      "342f0a2e56a66c09c47822928b9b585e61301404 ozkl: ported to xlib with very basic pixel access",
+      "486ac2b7fd9867a6c93b650dc30ad28bf47f0f30 ozkl: Windows GDI port",
+      "136cc5954b63dffbcbe60e5cea9231074a7debe8 ozkl: renamed to doomgeneric",
+      "015fec85cf502fd0d67eed4498d4d79e323dd987 Maxime Vincent: tty keyboard input work in progress",
+      "72b0675c10f51ba5844df5669991c3ab7038fd1f Maxime Vincent: fbdoom first version with more generic framebuffer support",
+      "019b22b7bdf67c012bceffb0315de696d2819c9e Maxime Vincent: Upgraded to chocolate-doom port instead",
+      "968f7e0090fd9dc08c6a0fdbe5f51b8846ab81d7 Maxime Vincent: Even less warnings, working on Frosted again. Walls still b0rked",
+      "491cc4b0e12b058e57daff1149c07ee0ac90a8e8 Maxime Vincent: Removed a lot of warnings - but broke Frosted version",
+      "d9d80e4e18e1ce4d9417efe68c52758d932c41ef Maxime Vincent: Reduce stack usage",
+      "6ab1ad1ed2aa21811ee63dc752b6c9249c3daf95 Maxime Vincent: Add more debugging to build",
+      "dbb534f408919c58a4e3437dc046a6dfec5f716f Maxime Vincent: Compiles with stubs, dummy video and sound",
+      "c9855f26013830c00840d8b24d57e32321f6f4c9 Maxime Vincent: Rename to frosted-doom",
+      "4eb368a960647c8cc82d721d0183629ae10759d1 Travis Bradshaw: The DOOM sources as originally released on December 23, 1997"
+    ]
+  },
+  {
+    "file": "Makefile.freebsd",
+    "history": [
+      "39a54f4574a8f351801f50a4ffdd1a3e57b4990e ozkl: Makefile.freebsd (gmake on freebsd)",
+      "342f0a2e56a66c09c47822928b9b585e61301404 ozkl: ported to xlib with very basic pixel access",
+      "486ac2b7fd9867a6c93b650dc30ad28bf47f0f30 ozkl: Windows GDI port",
+      "136cc5954b63dffbcbe60e5cea9231074a7debe8 ozkl: renamed to doomgeneric",
+      "015fec85cf502fd0d67eed4498d4d79e323dd987 Maxime Vincent: tty keyboard input work in progress",
+      "72b0675c10f51ba5844df5669991c3ab7038fd1f Maxime Vincent: fbdoom first version with more generic framebuffer support",
+      "019b22b7bdf67c012bceffb0315de696d2819c9e Maxime Vincent: Upgraded to chocolate-doom port instead",
+      "968f7e0090fd9dc08c6a0fdbe5f51b8846ab81d7 Maxime Vincent: Even less warnings, working on Frosted again. Walls still b0rked",
+      "491cc4b0e12b058e57daff1149c07ee0ac90a8e8 Maxime Vincent: Removed a lot of warnings - but broke Frosted version",
+      "d9d80e4e18e1ce4d9417efe68c52758d932c41ef Maxime Vincent: Reduce stack usage",
+      "6ab1ad1ed2aa21811ee63dc752b6c9249c3daf95 Maxime Vincent: Add more debugging to build",
+      "dbb534f408919c58a4e3437dc046a6dfec5f716f Maxime Vincent: Compiles with stubs, dummy video and sound",
+      "c9855f26013830c00840d8b24d57e32321f6f4c9 Maxime Vincent: Rename to frosted-doom",
+      "4eb368a960647c8cc82d721d0183629ae10759d1 Travis Bradshaw: The DOOM sources as originally released on December 23, 1997"
+    ]
+  },
+  {
+    "file": "Makefile.linuxvt",
+    "history": [
+      "5753998234113c0ff9b17fd69f0f49cda7a7d493 techflashYT: New platform: Linux VT",
+      "0f488ee086caa372135c329b41b2e942ab51503b ozkl: clang istead of gcc",
+      "d56ba1f41e57f83936ada349e849fbcd84eb704d Ørjan: Makefile: build with _DEFAULT_SOURCE",
+      "342f0a2e56a66c09c47822928b9b585e61301404 ozkl: ported to xlib with very basic pixel access",
+      "486ac2b7fd9867a6c93b650dc30ad28bf47f0f30 ozkl: Windows GDI port",
+      "136cc5954b63dffbcbe60e5cea9231074a7debe8 ozkl: renamed to doomgeneric",
+      "015fec85cf502fd0d67eed4498d4d79e323dd987 Maxime Vincent: tty keyboard input work in progress",
+      "72b0675c10f51ba5844df5669991c3ab7038fd1f Maxime Vincent: fbdoom first version with more generic framebuffer support",
+      "019b22b7bdf67c012bceffb0315de696d2819c9e Maxime Vincent: Upgraded to chocolate-doom port instead",
+      "968f7e0090fd9dc08c6a0fdbe5f51b8846ab81d7 Maxime Vincent: Even less warnings, working on Frosted again. Walls still b0rked",
+      "491cc4b0e12b058e57daff1149c07ee0ac90a8e8 Maxime Vincent: Removed a lot of warnings - but broke Frosted version",
+      "d9d80e4e18e1ce4d9417efe68c52758d932c41ef Maxime Vincent: Reduce stack usage",
+      "6ab1ad1ed2aa21811ee63dc752b6c9249c3daf95 Maxime Vincent: Add more debugging to build",
+      "dbb534f408919c58a4e3437dc046a6dfec5f716f Maxime Vincent: Compiles with stubs, dummy video and sound",
+      "c9855f26013830c00840d8b24d57e32321f6f4c9 Maxime Vincent: Rename to frosted-doom",
+      "4eb368a960647c8cc82d721d0183629ae10759d1 Travis Bradshaw: The DOOM sources as originally released on December 23, 1997"
+    ]
+  },
+  {
+    "file": "Makefile.sdl",
+    "history": [
+      "c2dad8e1347aa39eaa1a65fd34368aa7605ad36d ozkl: sdl makefile",
+      "1aebbdf1dcfa33b65b1eb6eb407183ec726f5735 ozkl: better sdl makefile",
+      "35387d77b85a4094d81ef9b2c44c332a55ab48b3 Georgi Gerganov: Added SDL2-based sound playback",
+      "0f488ee086caa372135c329b41b2e942ab51503b ozkl: clang istead of gcc",
+      "63551ae64c9893fcc0b463536c43be49bdfbb5b4 Akhsarbek Gozoev: Renamed all occurrences of 'osx' to 'sdl', deleted binary files (doomgeneric, doomgeneric/DOOM1.WAD)",
+      "aadf841f312eddc73326977bb4838f08260db5a6 Akhsarbek Gozoev: osx sdl2 port done",
+      "342f0a2e56a66c09c47822928b9b585e61301404 ozkl: ported to xlib with very basic pixel access",
+      "486ac2b7fd9867a6c93b650dc30ad28bf47f0f30 ozkl: Windows GDI port",
+      "136cc5954b63dffbcbe60e5cea9231074a7debe8 ozkl: renamed to doomgeneric",
+      "015fec85cf502fd0d67eed4498d4d79e323dd987 Maxime Vincent: tty keyboard input work in progress",
+      "72b0675c10f51ba5844df5669991c3ab7038fd1f Maxime Vincent: fbdoom first version with more generic framebuffer support",
+      "019b22b7bdf67c012bceffb0315de696d2819c9e Maxime Vincent: Upgraded to chocolate-doom port instead",
+      "968f7e0090fd9dc08c6a0fdbe5f51b8846ab81d7 Maxime Vincent: Even less warnings, working on Frosted again. Walls still b0rked",
+      "491cc4b0e12b058e57daff1149c07ee0ac90a8e8 Maxime Vincent: Removed a lot of warnings - but broke Frosted version",
+      "d9d80e4e18e1ce4d9417efe68c52758d932c41ef Maxime Vincent: Reduce stack usage",
+      "6ab1ad1ed2aa21811ee63dc752b6c9249c3daf95 Maxime Vincent: Add more debugging to build",
+      "dbb534f408919c58a4e3437dc046a6dfec5f716f Maxime Vincent: Compiles with stubs, dummy video and sound",
+      "c9855f26013830c00840d8b24d57e32321f6f4c9 Maxime Vincent: Rename to frosted-doom",
+      "4eb368a960647c8cc82d721d0183629ae10759d1 Travis Bradshaw: The DOOM sources as originally released on December 23, 1997"
+    ]
+  },
+  {
+    "file": "Makefile.soso",
+    "history": [
+      "935156667fe3eafcb602e04efd24dab957eaba39 ozkl: soso updates",
+      "b94eba35b7cf4b2002857c7c625aeb24e99f979e ozkl: makefile.soso update",
+      "2019640bd62d727d56dcb811850cc55a7a3a3e27 ozkl: doom soso port update",
+      "b964f78952befaa56bb3beb121471e5d22ef1f3c ozkl: better framebuffer handling for soso",
+      "d56ba1f41e57f83936ada349e849fbcd84eb704d Ørjan: Makefile: build with _DEFAULT_SOURCE",
+      "342f0a2e56a66c09c47822928b9b585e61301404 ozkl: ported to xlib with very basic pixel access",
+      "486ac2b7fd9867a6c93b650dc30ad28bf47f0f30 ozkl: Windows GDI port",
+      "136cc5954b63dffbcbe60e5cea9231074a7debe8 ozkl: renamed to doomgeneric",
+      "015fec85cf502fd0d67eed4498d4d79e323dd987 Maxime Vincent: tty keyboard input work in progress",
+      "72b0675c10f51ba5844df5669991c3ab7038fd1f Maxime Vincent: fbdoom first version with more generic framebuffer support",
+      "019b22b7bdf67c012bceffb0315de696d2819c9e Maxime Vincent: Upgraded to chocolate-doom port instead",
+      "968f7e0090fd9dc08c6a0fdbe5f51b8846ab81d7 Maxime Vincent: Even less warnings, working on Frosted again. Walls still b0rked",
+      "491cc4b0e12b058e57daff1149c07ee0ac90a8e8 Maxime Vincent: Removed a lot of warnings - but broke Frosted version",
+      "d9d80e4e18e1ce4d9417efe68c52758d932c41ef Maxime Vincent: Reduce stack usage",
+      "6ab1ad1ed2aa21811ee63dc752b6c9249c3daf95 Maxime Vincent: Add more debugging to build",
+      "dbb534f408919c58a4e3437dc046a6dfec5f716f Maxime Vincent: Compiles with stubs, dummy video and sound",
+      "c9855f26013830c00840d8b24d57e32321f6f4c9 Maxime Vincent: Rename to frosted-doom",
+      "4eb368a960647c8cc82d721d0183629ae10759d1 Travis Bradshaw: The DOOM sources as originally released on December 23, 1997"
+    ]
+  },
+  {
+    "file": "Makefile.sosox",
+    "history": [
+      "1456d5ca13a7c132f96805e7e8b06247a67ea3ab ozkl: sosox: get keys from nanox",
+      "2d9b24f07c78c36becf41d89db30fa99863463e5 ozkl: soso nano-x port",
+      "2019640bd62d727d56dcb811850cc55a7a3a3e27 ozkl: doom soso port update",
+      "b964f78952befaa56bb3beb121471e5d22ef1f3c ozkl: better framebuffer handling for soso",
+      "d56ba1f41e57f83936ada349e849fbcd84eb704d Ørjan: Makefile: build with _DEFAULT_SOURCE",
+      "342f0a2e56a66c09c47822928b9b585e61301404 ozkl: ported to xlib with very basic pixel access",
+      "486ac2b7fd9867a6c93b650dc30ad28bf47f0f30 ozkl: Windows GDI port",
+      "136cc5954b63dffbcbe60e5cea9231074a7debe8 ozkl: renamed to doomgeneric",
+      "015fec85cf502fd0d67eed4498d4d79e323dd987 Maxime Vincent: tty keyboard input work in progress",
+      "72b0675c10f51ba5844df5669991c3ab7038fd1f Maxime Vincent: fbdoom first version with more generic framebuffer support",
+      "019b22b7bdf67c012bceffb0315de696d2819c9e Maxime Vincent: Upgraded to chocolate-doom port instead",
+      "968f7e0090fd9dc08c6a0fdbe5f51b8846ab81d7 Maxime Vincent: Even less warnings, working on Frosted again. Walls still b0rked",
+      "491cc4b0e12b058e57daff1149c07ee0ac90a8e8 Maxime Vincent: Removed a lot of warnings - but broke Frosted version",
+      "d9d80e4e18e1ce4d9417efe68c52758d932c41ef Maxime Vincent: Reduce stack usage",
+      "6ab1ad1ed2aa21811ee63dc752b6c9249c3daf95 Maxime Vincent: Add more debugging to build",
+      "dbb534f408919c58a4e3437dc046a6dfec5f716f Maxime Vincent: Compiles with stubs, dummy video and sound",
+      "c9855f26013830c00840d8b24d57e32321f6f4c9 Maxime Vincent: Rename to frosted-doom",
+      "4eb368a960647c8cc82d721d0183629ae10759d1 Travis Bradshaw: The DOOM sources as originally released on December 23, 1997"
+    ]
+  },
+  {
+    "file": "Makefile.win",
+    "history": [
+      "5a7c842f0ccbe6914637abd56efaeaba2ba4a575 yughias: added compilation for mingw",
+      "0f488ee086caa372135c329b41b2e942ab51503b ozkl: clang istead of gcc",
+      "d56ba1f41e57f83936ada349e849fbcd84eb704d Ørjan: Makefile: build with _DEFAULT_SOURCE",
+      "342f0a2e56a66c09c47822928b9b585e61301404 ozkl: ported to xlib with very basic pixel access",
+      "486ac2b7fd9867a6c93b650dc30ad28bf47f0f30 ozkl: Windows GDI port",
+      "136cc5954b63dffbcbe60e5cea9231074a7debe8 ozkl: renamed to doomgeneric",
+      "015fec85cf502fd0d67eed4498d4d79e323dd987 Maxime Vincent: tty keyboard input work in progress",
+      "72b0675c10f51ba5844df5669991c3ab7038fd1f Maxime Vincent: fbdoom first version with more generic framebuffer support",
+      "019b22b7bdf67c012bceffb0315de696d2819c9e Maxime Vincent: Upgraded to chocolate-doom port instead",
+      "968f7e0090fd9dc08c6a0fdbe5f51b8846ab81d7 Maxime Vincent: Even less warnings, working on Frosted again. Walls still b0rked",
+      "491cc4b0e12b058e57daff1149c07ee0ac90a8e8 Maxime Vincent: Removed a lot of warnings - but broke Frosted version",
+      "d9d80e4e18e1ce4d9417efe68c52758d932c41ef Maxime Vincent: Reduce stack usage",
+      "6ab1ad1ed2aa21811ee63dc752b6c9249c3daf95 Maxime Vincent: Add more debugging to build",
+      "dbb534f408919c58a4e3437dc046a6dfec5f716f Maxime Vincent: Compiles with stubs, dummy video and sound",
+      "c9855f26013830c00840d8b24d57e32321f6f4c9 Maxime Vincent: Rename to frosted-doom",
+      "4eb368a960647c8cc82d721d0183629ae10759d1 Travis Bradshaw: The DOOM sources as originally released on December 23, 1997"
+    ]
+  },
+  {
+    "file": "mus2mid.h",
+    "history": [
+      "35387d77b85a4094d81ef9b2c44c332a55ab48b3 Georgi Gerganov: Added SDL2-based sound playback"
+    ]
+  }
+]

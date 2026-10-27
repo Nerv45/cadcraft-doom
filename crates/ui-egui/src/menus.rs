@@ -15,6 +15,10 @@ const RECENT_CLEAR: &str = "ui.recent.clear";
 
 /// UI-only commands: (id, label, menu path, shortcut).
 pub const UI_COMMANDS: &[(&str, &str, &[&str], Option<&str>)] = &[
+    #[cfg(all(feature = "doom", target_os = "windows", target_arch = "x86_64", target_env = "msvc"))]
+    ("doom", "DOOM", &["Tools", "DOOM"], None),
+    #[cfg(all(feature = "doom", target_os = "windows", target_arch = "x86_64", target_env = "msvc"))]
+    ("doomexit", "Exit DOOM", &["Tools", "Exit DOOM"], None),
     ("ui.spacemouse", "3D Mouse...", &["Tools", "3D Mouse..."], None),
     ("ui.spacemouse.calibrate", "Calibrate 3D Mouse", &[], None),
     ("ui.spacemouse.navigate", "3D Mouse Navigation", &[], None),
@@ -84,6 +88,10 @@ pub fn run_ui_command(app: &mut CadApp, id: &str, params: &Value) -> Option<Resu
 }
 
 fn run_ui_command_inner(app: &mut CadApp, id: &str, params: &Value) -> Option<Result<Value, String>> {
+    #[cfg(all(feature = "doom", target_os = "windows", target_arch = "x86_64", target_env = "msvc"))]
+    if matches!(id, "doom" | "doomexit") {
+        return Some(crate::doom::command(app, id));
+    }
     if let Some(result) = crate::spacemouse::route(app, id, params) {
         return Some(result);
     }

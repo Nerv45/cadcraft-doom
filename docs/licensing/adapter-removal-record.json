@@ -1,0 +1,241 @@
+{
+  "upstream_revision": "e257a09527062bfb986b6e5e0780839b6cbd5b71",
+  "removed": [
+    {
+      "file": "config.h",
+      "old_sha256": "7b7bc33c230013ac3801db6ac26bf77770218efc72ab16c844da3735ae774380",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "replaced host interface/config/bootstrap"
+    },
+    {
+      "file": "d_textur.h",
+      "old_sha256": "c64c015c521f88f73ad16e73240fe7892e1f6ff5d1fc0a7fe4df2dc475c939ac",
+      "old_classification": "GPL-2.0-or-later",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "doom.h",
+      "old_sha256": "696a7dc9c8e3c4215a342d0e90a2a0991deff4a86cf46af54458cacb2dce4201",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "doomgeneric.c",
+      "old_sha256": "a31fe1b28b55623766de7275a98b529a8033c08c656a02a30bb098dc7fe71af1",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "replaced host interface/config/bootstrap"
+    },
+    {
+      "file": "doomgeneric.h",
+      "old_sha256": "fed9b13bec4be0ebbf8c2956d287c81d9584b88c73382522dca41fad0b449180",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "replaced host interface/config/bootstrap"
+    },
+    {
+      "file": "doomgeneric.vcxproj",
+      "old_sha256": "dc262bf9b625868827fa10b7b8e363a13e76df733afe3dafced00d8b897031d4",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "doomgeneric.vcxproj.filters",
+      "old_sha256": "de4e1b4ebaf9cd7b65d62ad5e58760306c63040be08d61903fa1aebee5ecf32c",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "doomgeneric_allegro.c",
+      "old_sha256": "0d40c92874558c4cb6dae768e600e370c805c055d8d4492e56a8ad46f33d5fe5",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "doomgeneric_emscripten.c",
+      "old_sha256": "27e4f2340dfd9e2007067efdff1dba57b5e1a47ab3cb178082602b683449e78d",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "doomgeneric_linuxvt.c",
+      "old_sha256": "fd5b569191e70ad683d2c368895bf00c27ebb6caeb680572d787beb1f7720f5f",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "doomgeneric_sdl.c",
+      "old_sha256": "1a8db43825bfcac53660918315a0b2ec0ec5ff215ca932a5c9d488a053f42a8a",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "doomgeneric_soso.c",
+      "old_sha256": "62e3e556fc3b3261766c8069f819fa55fef8536a17f97af7e268e4aaf0fe7af3",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "doomgeneric_sosox.c",
+      "old_sha256": "dfc3177ddeba228b082dff0f6726898487203782229c897755d153dadb795058",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "doomgeneric_win.c",
+      "old_sha256": "0136b01583cd544535d599f422639d45fdb9931a834a755ab3c546fa403d82a5",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "doomgeneric_xlib.c",
+      "old_sha256": "d7749d5a990f660cc907ad8d8b339cb26e0125a3475ceae65002733023fd3663",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "dummy.c",
+      "old_sha256": "4fc322bba106b4706dc1874948df715c7c343a48eeedc1e85958ff3c86e9932a",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "replaced host interface/config/bootstrap"
+    },
+    {
+      "file": "gusconf.c",
+      "old_sha256": "dcbd455a9917f5731cff90af4b204ffe67db2b85acaaff6e9194811c4c0fe8c0",
+      "old_classification": "GPL-2.0-or-later",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "i_allegromusic.c",
+      "old_sha256": "baad5046d31a349e7fae71ab0c214016ad7c26f291a03ac28ee937964f09a2ab",
+      "old_classification": "GPL-2.0-or-later",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "i_allegrosound.c",
+      "old_sha256": "7518e5427704742e0b44a60d55985c79fcd08ade9488e56463715807cdf501a5",
+      "old_classification": "GPL-2.0-or-later",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "i_sdlmusic.c",
+      "old_sha256": "abfd3b412ef06b458de143305a5e7074d9383e39d4ddffffde030a8b829bea6a",
+      "old_classification": "GPL-2.0-or-later",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "i_sdlsound.c",
+      "old_sha256": "3f75d4a29d4d9c6ec42e7e40b04e15f01de2dbdc356a231118853b3913822040",
+      "old_classification": "GPL-2.0-or-later",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "icon.c",
+      "old_sha256": "0550e2b1c405fec113ad8cfcec6dbc1ff81db9ad815d9a4052050f1020f69a75",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "Makefile",
+      "old_sha256": "8c0f7146d00d9a729551470bb47de8c3e9f81f0ad044d6a81731b3cda00f72ba",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "Makefile.djgpp",
+      "old_sha256": "99917a2e040bd81518372c7d932f66f0d4185f6addfbccdd9a023af8c7a8651c",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "Makefile.emscripten",
+      "old_sha256": "ef67fc21ca7b5cc13fffdaa47ea04457c1868b3da11eb1f348c185f0e9c472b6",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "Makefile.freebsd",
+      "old_sha256": "10ebd92c7c90df225597e317e4b834d9b8b94097b707b3643724007ffbbbb816",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "Makefile.linuxvt",
+      "old_sha256": "a3e830bade0f26c8063f5c6164913e7bc7fb84c31ca5024f65ef6c73c2c829a3",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "Makefile.sdl",
+      "old_sha256": "3080eabf09af4d0b8587e01195019151bb0a906b7000540a508701c672416456",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "Makefile.soso",
+      "old_sha256": "9c485851f3dee9da60bfacd86b3d4d3a6db0d46ebbdf5026b8c806e5cb7882e0",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "Makefile.sosox",
+      "old_sha256": "5b82d0327ff3642a2637deaf270985189ee89aeddf1823cd3b92d402275323ce",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "Makefile.win",
+      "old_sha256": "de96688b862c7592cacb079b404f31c36c04dacd95276d8315210bf88856804a",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "mus2mid.c",
+      "old_sha256": "5a75ae04f2a4a2694c464301f2af074c2abc5402b4e50ee74769a64859b22756",
+      "old_classification": "GPL-2.0-or-later",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "mus2mid.h",
+      "old_sha256": "1502cd39f8ba5c2c4aac01d654844f3a1d72f5a070f8e56d590ada86e14f9caf",
+      "old_classification": "NO-EXPLICIT-GRANT",
+      "reason": "not used by selected engine closure"
+    },
+    {
+      "file": "net_packet.h",
+      "old_sha256": "b214455e169308d410e23c3bb0b0e7d58d297a67f31ad961dd5b7c32f8c91a3b",
+      "old_classification": "GPL-2.0-or-later",
+      "reason": "not used by selected engine closure"
+    }
+  ],
+  "retained_vendor_files": 169,
+  "modified_retained_files": [
+    "d_iwad.c",
+    "d_main.c",
+    "i_endoom.c",
+    "i_input.c",
+    "i_sound.c",
+    "i_system.c",
+    "i_timer.c",
+    "i_video.c",
+    "m_config.c",
+    "v_video.c",
+    "w_file.c",
+    "w_wad.c"
+  ],
+  "new_host_files": [
+    "native/cadcraft_platform.h",
+    "native/cadcraft_config.h",
+    "native/engine_host.c"
+  ],
+  "upstream_readmes_removed": [
+    "vendor/upstream-docs/README.md",
+    "vendor/upstream-docs/README.TXT"
+  ],
+  "prior_source_exposure": "Original ambiguous files were inspected during the earlier audit; no clean-room certification is claimed.",
+  "additional_removed_documents": [
+    {
+      "file": "crates/doom/vendor/README-DoomGeneric.md",
+      "sha256": "7f7588b4da4c762fc868b0f0f9f498810dbaf9fd9257c2006108f8c5dc978f20",
+      "reason": "Unused upstream README without explicit per-file grant; upstream link retained in provenance"
+    }
+  ]
+}

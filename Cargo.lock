@@ -615,6 +615,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "cadcraft-doom"
+version = "0.1.0"
+dependencies = [
+ "cc",
+]
+
+[[package]]
 name = "cadcraft-dwg"
 version = "0.12.0"
 dependencies = [
@@ -721,6 +728,7 @@ version = "0.12.0"
 dependencies = [
  "cadcraft-color",
  "cadcraft-doc",
+ "cadcraft-doom",
  "cadcraft-engine",
  "cadcraft-fonts",
  "cadcraft-geom",

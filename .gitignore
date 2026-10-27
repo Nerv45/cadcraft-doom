@@ -9,3 +9,21 @@
 *.swp
 /apps/cadcraft-web/dist/
 /.claude/worktrees/
+
+# CADCraft DOOM: private game data and generated release/runtime files
+*.[wW][aA][dD]
+*.lmp
+*.dsg
+*.token
+*.log
+*.exe
+*.pdb
+*.zip
+/run-data/
+/profile/
+/release-artifacts/
+/vendor-deps/
+
+# Python audit/packaging caches
+__pycache__/
+*.py[cod]

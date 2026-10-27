@@ -3,9 +3,9 @@ Copyright (c) 2026 ArtCraft Team and the CADCraft contributors.
 Licensed under the MIT License or the Apache License, Version 2.0, at your option
 (LICENSE-MIT, LICENSE-APACHE).
 
-The ArtCraft name, wordmark and logos in docs/brand/ are trademarks of the ArtCraft Team. They are
-not open source and are not covered by the license above; their terms are in
-docs/brand/LICENSE-brand.txt.
+This is an unofficial community modification, not an ArtCraft product. Restricted ArtCraft
+artwork has been removed. The original brand terms remain in docs/brand/LICENSE-brand.txt.
+Plain-text references to the ArtCraft Team credit the original CADCraft developers.
 
 Third-party material
 
@@ -22,3 +22,15 @@ each under the SIL Open Font License 1.1.
 
 CADCraft is an independent project and is not affiliated with, sponsored by or endorsed by
 Autodesk, Inc. AutoCAD and DWG are trademarks of Autodesk, Inc.
+
+CADCraft DOOM community modification
+This modification is unofficial and is not endorsed by the original developers.
+DoomGeneric/id Software, Simon Howard, FSF and other contributors retain their
+original notices. The source tree contains GPL-2.0-or-later and GPL-3.0-or-later
+code. The combined application uses GPL-3.0-or-later; component grants remain.
+Ambiguous upstream host files have been removed and replaced. See
+docs/licensing/ADAPTER_REPLACEMENT.md and licenses/MPL-SECONDARY-NOTICE.md.
+Dependency/font licenses and exact provenance are listed in THIRD_PARTY_LICENSES.md
+and docs/licensing/. The upstream asset statement above describes CADCraft's own
+assets; egui default fonts retain their separate OFL/UFL notices.
+No user-supplied game WAD is included in public source or binary candidates.

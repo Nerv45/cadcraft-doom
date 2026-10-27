@@ -1,0 +1,23 @@
+{
+  "public_release_allowed": false,
+  "offline_metadata_empty_cargo_home": {
+    "exit_code": 0,
+    "packages": 302
+  },
+  "native_tests": 3,
+  "ui_doom_tests": 2,
+  "viewport_tests": 1,
+  "packaging_tests": 5,
+  "clippy_exit_code": 0,
+  "clean_release_build_exit_code": 0,
+  "wad_files_in_source_checkout": 0,
+  "desktop_nowad_exit_code": 0,
+  "desktop_game_exit_code": 0,
+  "desktop_exit_mechanism": "F12",
+  "doomexit_state_preservation": "verified by automated real-engine viewport test",
+  "original_wad_sha256": "1d7d43be501e67d927e415e0b8f3e29c3bf33075e859721816f652a526cac771",
+  "original_staged_wad_sha256": "1d7d43be501e67d927e415e0b8f3e29c3bf33075e859721816f652a526cac771",
+  "exe_sha256": "4d20cb701766589f50f44310d1de7a4e93d4560ec5af61d07add2025a28f4848",
+  "historical_only": true,
+  "superseded_by": "docs/ADAPTER_VERIFICATION.md"
+}

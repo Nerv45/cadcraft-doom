@@ -11,7 +11,7 @@
 //!
 //! `log` records go to standard error and `<settings dir>/logs/cadcraft.log` (`RUST_LOG` sets the
 //! levels); see [`logging`] and [`config_dir`].
-#![cfg_attr(all(target_os = "windows", not(debug_assertions)), windows_subsystem = "windows")]
+#![cfg_attr(all(target_os = "windows", any(feature = "doom", not(debug_assertions))), windows_subsystem = "windows")]
 #![deny(clippy::unwrap_used, clippy::expect_used, clippy::panic, clippy::unimplemented, clippy::todo, clippy::unreachable)]
 
 mod control_server;
@@ -77,7 +77,9 @@ impl eframe::App for App {
         }
         self.cad.system_animations = self.system_animations.current();
         self.cad.logic(ctx);
-        self.spacemouse.poll(&mut self.cad, ctx);
+        if !self.cad.doom_active() {
+            self.spacemouse.poll(&mut self.cad, ctx);
+        }
         self.persist_workspace(false);
         if std::mem::take(&mut self.cad.quit_requested) {
             ctx.send_viewport_cmd(egui::ViewportCommand::Close);
@@ -189,7 +191,11 @@ fn config_dir_from(var: impl Fn(&str) -> Option<std::ffi::OsString>) -> Option<s
     }
 }
 
+#[cfg(not(feature = "doom"))]
 const APP_ID: &str = "ai.storyteller.cadcraft";
+// Keep this fork's Windows identity and persisted preferences separate.
+#[cfg(feature = "doom")]
+const APP_ID: &str = "org.cadcraftdoom.desktop";
 
 /// Stencil bits of the window's render pass (see `NativeOptions::stencil_buffer`).
 const STENCIL_BITS: u8 = 8;
@@ -271,7 +277,7 @@ fn main() -> eframe::Result {
         // swapchains hold two frames back under vsync (`CADCRAFT_VSYNC=1` restores vsync).
         wgpu_options: eframe::egui_wgpu::WgpuConfiguration::default().with_surface_config(surface),
         viewport: egui::ViewportBuilder::default()
-            .with_title("CADCraft")
+            .with_title(if cfg!(feature = "doom") { "CADCraft DOOM" } else { "CADCraft" })
             .with_inner_size([1600.0, 1000.0])
             .with_min_inner_size([900.0, 560.0])
             .with_drag_and_drop(true)

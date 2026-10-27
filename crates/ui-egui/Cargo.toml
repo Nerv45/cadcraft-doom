@@ -34,3 +34,8 @@ naga = { version = "30", features = ["wgsl-in", "glsl-out"] }
 [build-dependencies]
 serde_json = { workspace = true }
 toml = "1"
+[features]
+doom = ["dep:cadcraft-doom"]
+
+[target.'cfg(all(target_os = "windows", target_arch = "x86_64", target_env = "msvc"))'.dependencies]
+cadcraft-doom = { path = "../doom", optional = true }

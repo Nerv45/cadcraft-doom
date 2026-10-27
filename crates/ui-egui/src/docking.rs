@@ -346,6 +346,11 @@ pub fn show(app: &mut crate::CadApp, ui: &mut egui::Ui) {
         |ui, panel| match panel {
             Panel::Canvas => {
                 ui.painter().rect_filled(ui.max_rect(), 0.0, t.canvas);
+                #[cfg(all(feature = "doom", target_os = "windows", target_arch = "x86_64", target_env = "msvc"))]
+                if app.doom.active() {
+                    crate::doom::show(app, ui);
+                    return;
+                }
                 crate::canvas::show(app, ui);
             }
             Panel::ToolSets => crate::palettes::toolsets(app, ui),

@@ -8,6 +8,9 @@
 #![deny(clippy::unwrap_used, clippy::expect_used, clippy::panic, clippy::unimplemented, clippy::todo, clippy::unreachable)]
 #![forbid(unsafe_code)]
 
+#[cfg(all(feature = "doom", target_os = "windows", target_arch = "x86_64", target_env = "msvc"))]
+pub mod doom;
+
 pub mod aliasdlg;
 pub mod animation;
 pub mod autosave;
@@ -202,6 +205,8 @@ pub struct Services {
 }
 
 pub struct CadApp {
+    #[cfg(all(feature = "doom", target_os = "windows", target_arch = "x86_64", target_env = "msvc"))]
+    pub doom: doom::Mode,
     pub system_languages: Vec<String>,
     /// Whether the operating system shows animations, as the host reads it; `None` when the OS
     /// states nothing or the host cannot ask ([`animation`]).
@@ -261,8 +266,19 @@ pub struct CadApp {
 }
 
 impl CadApp {
+    pub fn doom_active(&self) -> bool {
+        #[cfg(all(feature = "doom", target_os = "windows", target_arch = "x86_64", target_env = "msvc"))]
+        {
+            return self.doom.active();
+        }
+        #[allow(unreachable_code)]
+        false
+    }
+
     pub fn new(session: Session, services: Services) -> Self {
         CadApp {
+            #[cfg(all(feature = "doom", target_os = "windows", target_arch = "x86_64", target_env = "msvc"))]
+            doom: doom::Mode::default(),
             system_languages: Vec::new(),
             system_animations: None,
             session,
@@ -603,7 +619,11 @@ impl CadApp {
         managers::plot_window_resume(self, ctx);
         hatchdlg::resume(self);
         self.autosave_tick(ctx);
-        menus::shortcuts(self, ctx);
+        #[cfg(all(feature = "doom", target_os = "windows", target_arch = "x86_64", target_env = "msvc"))]
+        doom::tick(self, ctx);
+        if !self.doom_active() {
+            menus::shortcuts(self, ctx);
+        }
         #[cfg(not(target_arch = "wasm32"))]
         for f in ctx.input(|i| i.raw.dropped_files.clone()) {
             let p = f.path().to_string_lossy().to_string();
@@ -620,6 +640,8 @@ impl CadApp {
             cap.wait();
         }
         if self.synthetic.is_empty() {
+            #[cfg(all(feature = "doom", target_os = "windows", target_arch = "x86_64", target_env = "msvc"))]
+            self.doom.raw_input(raw);
             return;
         }
         let n = match self.synthetic.first() {
@@ -637,6 +659,8 @@ impl CadApp {
         }
         let n = n.min(self.synthetic.len());
         raw.events.extend(self.synthetic.drain(..n));
+        #[cfg(all(feature = "doom", target_os = "windows", target_arch = "x86_64", target_env = "msvc"))]
+        self.doom.raw_input(raw);
     }
 
     /// Lay out the whole window.
