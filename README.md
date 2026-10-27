@@ -9,6 +9,9 @@ and notices remain. Read [LICENSE](LICENSE), [THIRD_PARTY_LICENSES.md](THIRD_PAR
 and the [replacement audit](docs/licensing/ADAPTER_REPLACEMENT.md).
 Publication still requires the project owner's approval; nothing has been pushed.
 
+Video launching the game is aviable:
+https://youtu.be/eyfm4SWIQ5M?si=18avMHVJrybn2TBp
+
 ## Features
 
 * Native DoomGeneric in the CADCraft process; no external Doom executable/window.
